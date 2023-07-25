@@ -5,8 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-<h1>this is the about us page</h1>
+<h1>this is the home page</h1>
 
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+
+    <input type="text" placeholder="enter full name" name = "fullnames"><br><br>
+    <input type="email" placeholder="email" name = "email"><br><br>
+    <input type="number" placeholder="enter age" name = "age"><br><br>
+    <input type="tel" placeholder="enter phone number" name = "phone"><br><br>
+    <input type="text" placeholder="enter class code" name = "classcode"><br><br>
+
+    <button>submit</button>
+</form>
 
 
 
